@@ -1,0 +1,117 @@
+@import url(globalStyles.css);
+
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family:'Inter', sans-serif;
+    font-style: inherit;
+    list-style: none;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-grey-7);
+    font-family: var(--font-primary);
+}
+.info__section{
+    background-color: var(--color-brand-2);
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info__div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 500px;
+}
+.info__title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.info__p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.search__section{
+    background-color: var(--color-grey-2);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search__div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 500px;
+}
+.search__title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.search__span{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 300px;
+}
+.search__label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+#userName{
+    height: 38px;
+    width: 316px;
+    border-radius: 4px;
+    background-color: var(--color-grey-1);
+    padding: 0 5px;
+    color: var(--color-grey-6);
+
+}
+#userName:hover, #userName:focus{
+    border: 1px solid var(--color-grey-6);
+    transition:0.9s;
+
+}
+.search__button{
+    height: 38px;
+    width: 324px;
+    border-radius: 4px;
+    padding: 10px 93px 10px 93px;
+    background-color: var(--color-brand-2);
+    color: var(--color-grey-7);
+    transition:0.9s;
+}
+.search__button:hover{
+    background-color: var(--color-brand-1);
+    transition:0.9s;
+    cursor: pointer;
+}
